@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Air University</title>
+</head>
+<header>
+    <h1>Air University</h1>
+</header>
+<nav>
+    <a href="#index">Home</a>
+    <a href="#about">About</a>
+    <a href="#admission">Admission</a>
+    <a href="#contact">Contact</a>
+    <a href="#events">Events</a>
+    <a href="#news">News</a>
+</nav>
+<style>
+    @font-face {
+    font-family: Avenir;
+    src: url(fonts/Avenir/AvenirNextLTPro-Bold.otf);
+}
+@font-face {
+    font-family: Submariner;
+    src: url(fonts/Submariner/submariner-r24-extralight.ttf);
+}
+@font-face {
+    font-family: Capitolium;
+    src: url(fonts/Captolium/Capitolium\ News\ W01\ 2\ Bold.ttf);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #0a2351;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    background: #002147;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    display: inline-block; 
+    margin: 0px; /* Adjust the margin as needed */
+}
+
+.main-content {
+    padding: 20px;
+}
+.research{
+    text-align: center;
+
+}
+.c1 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .head2, .head1, .text1, .text2, .text3, .text5, .research {
+            max-width: 100%;
+        }
+
+        /* Add more responsive styles as needed */
+
+        @media only screen and (min-width: 600px) {
+            /* Add styles for screens wider than 600 pixels */
+            .c4-1 {
+                display: flex;
+            }
+            .c2 {
+                text-align: left;
+            }
+
+            .head1, .text1, .head2 {
+                max-width: 80%;
+                margin: 0 auto;
+            }
+            .c4box1, .c8box1, .c8box2, .c10-1, .c10box1 {
+                width: 48%;
+                margin-left: 2%;
+            }
+
+        }
+
+header {
+    color: #fff;
+    background: #0a2351;
+    padding: 1px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-bottom: 0; /* Add this line to eliminate bottom space */
+}
+.name{
+    color: white;
+    font-family: Capitolium;
+    font-size: 80;
+    text-align: center;
+}
+.head1{
+    color: black;
+    font-family: Avenir;
+    font-size: 48;
+    text-align: center;
+}
+.head2{
+    color: white;
+    font-family: Avenir;
+    font-size: 24;
+    text-align: center;
+}
+.text1{
+    color: rgb(80, 80, 80);
+    font-family: Submariner;
+    font-size: 34;
+    font-weight: lighter;
+    text-align: center;
+}
+.text2{
+    color: rgb(40, 40, 40);
+    font-family: Submariner;
+    font-size: 28;
+    font-weight: lighter;
+    text-align: center;
+}
+.text3{
+    color: black;
+    font-family: Avenir;
+    font-size: 24;
+    text-align: center;
+    text-decoration: none;
+}
+.text4{
+    color: black;
+    font-family: Avenir;
+    font-size: 28;
+    text-align: center;
+}
+.text5{
+    color: rgb(40, 40, 40);
+    font-family: Submariner;
+    font-size: 22;
+    font-weight: lighter;
+    text-align: center;
+    text-decoration: none;
+}
+.research{
+    color: black;
+
+}
+
+.bg-image{
+    z-index: 0;
+    width: 100%;
+    height: 71%;
+    background-image: url(img/visitau.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: relative;
+}
+.bar{
+    opacity: 20%;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+}
+.c1{
+    z-index: 0;
+    width: auto;
+    height: 5%;
+    background-color: #002147;
+    overflow: hidden;
+}
+.c2{
+    z-index: 0;
+    width: auto;
+    height: auto;
+    background-color: white;
+}
+.c3{
+    z-index: 0;
+    width: auto;
+    height: auto;
+    background-color: whitesmoke;
+    position: relative;
+}
+.c3-1{
+    z-index: 1;
+    width: auto;
+    height: auto;
+    background-color: whitesmoke;
+    overflow: hidden;
+    display: flex;
+}
+.c4{
+    z-index: 0;
+    width: auto;
+    height: auto;
+    background-color: white;
+    position: relative;
+}
+.c4-1{
+    z-index: 1;
+    width: auto;
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+}
+.img1{
+    z-index: 0;
+    width: auto;
+    height: 70%;
+    background-image: url(img/Air-University.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    overflow: hidden;
+}
+.c5{
+    z-index: 0;
+    width: auto;
+    height: auto;
+    background-color: white;
+    position: relative;
+}
+.c5-1{
+    z-index: 1;
+    width: auto;
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+}
+.c6{
+    z-index: 0;
+    width: auto;
+    height: auto;
+    background-color: whitesmoke;
+    position: relative;
+}
+.c6-1{
+    z-index: 1;
+    width: auto;
+    height: auto;
+    background-color: whitesmoke;
+    overflow: hidden;
+    display: flex;
+}
+.c7{
+    z-index: 0;
+    width: auto;
+    height: auto;
+    background-color: white;
+    position: relative;
+}
+.c7-1{
+    z-index: 1;
+    width: auto;
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+}
+.img2{
+    z-index: 0;
+    width: auto;
+    height: 72.5%;
+    background-color: black;
+    overflow: hidden;
+}
+.c8{
+    z-index: 0;
+    width: auto;
+    height: auto;
+    background-color: white;
+    position: relative;
+}
+.c8-1{
+    z-index: 1;
+    width: auto;
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+}
+.c9{
+    z-index: 0;
+    width: auto;
+    height: auto;
+    background-color: whitesmoke;
+    position: relative;
+}
+.c9-1{
+    z-index: 1;
+    width: auto;
+    height: auto;
+    background-color: whitesmoke;
+    overflow: hidden;
+    display: flex;
+}
+.c10{
+    z-index: 0;
+    width: auto;
+    height: auto;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+.c10-1{
+    z-index: 1;
+    width: auto;
+    height: auto;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+}
+.c10img1{
+    z-index: 1;
+    width: 80%;
+    height: 37%;
+    margin-left: 10%;
+    margin-top: 1%;
+    background-image: url(img/graduates.jpg);
+    overflow: hidden;
+}
+.c10img2{
+    z-index: 1;
+    width: 100%;
+    height: 30%;
+    background-image: url(img/95476890330.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.c11{
+    z-index: 0;
+    width: auto;
+    height: auto;
+    background-color: whitesmoke;
+    position: relative;
+}
+.c12{
+    z-index: 0;
+    width: auto;
+    height: auto;
+    background-color: white;
+    position: relative;
+    display: flex;
+}
+.c13{
+    z-index: 0;
+    width: auto;
+    height: auto;
+    background-color: #002147;
+    position: relative;
+    display: flex;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0a2351;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: #0a2351;
+}
+
+.morebox{
+    width: 25%;
+    height: 85px;
+    background-color: #002147;
+    margin-left: 37.5%;
+    color: white;
+}
+.c3box1{
+    z-index: 2;
+    width: 32.5%;
+    height: 100%;
+    background-color: black;
+}
+.c3box2{
+    z-index: 2;
+    width: 15%;
+    height: 100%;
+    background-color: black;
+}
+.c4box1{
+    z-index: 2;
+    width: 21%;
+    height: 100%;
+    background-color: white;
+}
+.c4box2{
+    z-index: 3;
+    width: auto;
+    height: 55%;
+    background-color: black;
+    overflow: hidden;
+}
+.c5box1{
+    z-index: 2;
+    width: 25%;
+    height: 100%;
+    background-color: white;
+}
+.c6box1{
+    z-index: 2;
+    width: 18.5%;
+    height: 100%;
+    background-color: white;
+}
+.c6box2{
+    z-index: 3;
+    width: auto;
+    height: 50%;
+    background-color: black;
+    overflow: hidden;
+}
+.c7box1{
+    z-index: 2;
+    width: 21%;
+    height: 100%;
+    background-color: white;
+}
+.c7box2{
+    z-index: 3;
+    width: auto;
+    height: 45%;
+    background-color: black;
+    overflow: hidden;
+}
+.c8box1{
+    z-index: 2;
+    width: 21%;
+    height: 100%;
+    background-color: white;
+}
+.c8box2{
+    z-index: 3;
+    width: auto;
+    height: 60%;
+    background-color: black;
+    overflow: hidden;
+}
+.c9box1{
+    z-index: 2;
+    width: 21%;
+    height: 100%;
+    background-color: white;
+}
+.c9box2{
+    z-index: 3;
+    width: auto;
+    height: 60%;
+    background-color: black;
+    overflow: hidden;
+}
+.c10box1{
+    z-index: 2;
+    width: 37.5%;
+    height: 100%;
+    background-color: white;
+}
+.icons{
+    margin-top: 0.5%;
+}
+.c12list{
+    width: 14%;
+    height: 80%;
+    margin-top: 2%;
+    background-color: white;
+}
+.list-text{
+    color: rgb(40, 40, 40);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24;
+    text-align: left;
+    text-decoration: none;
+}
+.end-text{
+    color: rgb(40, 40, 40);
+    font-size: 18;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    text-decoration: none;
+}
+.end-text a{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18;
+    text-align: left;
+    text-decoration: none;
+}
+.c13box1{
+    width: 15%;
+    height: 100%;
+}
+.c13box2{
+    width: 20%;
+    height: 100%;
+    
+}
+</style>
+
+<body>
+
+    <div class="c1">
+        <img src="https://www.au.edu.pk/pages/About/About_Images/visitau.jpg" alt="air-university">
+        <h1 class="head2" style="margin-top: 0.35%;">Explore AIR</h1>
+        
+    </div>
+
+    <div class="c2">
+        <div class="c2">
+            <h1 class="head1" style="margin-top: 2%;">A Societal Mission</h1>
+            <h1 class="text1" style="margin-top: 1%;">Air University is a federally chartered Public Sector University established in 2002. The mission of Air University<br>is to achieve excellence in teaching and research for producing graduates with sound professional<br>knowledge, integrity of character, a keen sense of social responsibility and a passion for<br>lifelong learning. The University shall stand committed to creating an environment conducive for attracting<br>the best students, faculty and supporting staff for contributing to the development of a prosperous,<br>peaceful and enlightened society.</h1>
+        
+            <a href="#" target="_blank" style="text-decoration: none;">
+                <div class="morebox" style="margin-top: 2%;">
+                    <h1 class="head2"><br>MoreAboutAir</h1>
+                </div>
+                <br>
+            </a>
+        </div>
+    </div>
+
+    <div class="c4">
+        <h1 class="head1" style="margin-top: 2%;">Academics</h1>
+        <h1 class="text2" style="margin-top: 1.5%;">Preparing students to make meaningful contributions to soceity<br>as engaged citizens and leaders in a complex world</h1>
+        <div class="c4-1" style="margin-top: 1%;">
+            <div class="c4box1" style="margin-left: 15%;">
+                <div class="c4box2">
+                    <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/8.jpg" style="width: 110%;">
+                </div>
+                <h1 class="text3">Undergraduate Programmes</h1>
+                <h1 class="text5">Students' professional development and foundation building are both facilitated by their undergraduate education. Our diverse UG programmes turn students into successful people.</h1>
+            </div>
+
+            <div class="c4box1" style="margin-left: 3.5%;">
+                <div class="c4box2">
+                    <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/9.jpg "style="width: 110%;">
+                </div>
+                <h1 class="text3">Masters Programmes</h1>
+                <h1 class="text5">Graduate programmes encourage students to be inquisitive and enhance their knowledge and expertise in specialised sectors. As a result, AU has the most MS-level programmes available.</h1>
+            </div>
+
+            <div class="c4box1" style="margin-left: 3.5%;">
+                <div class="c4box2">
+                    <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/10.jpg" style="width: 110%;">
+                </div>
+                <h1 class="text3">PhD Programmes</h1>
+                <h1 class="text5">Thus, the goal of the PhD programmes at AU is to provide information that fuels economic progress. However, AU sought to produce knowledge for professional development.</h1>
+            </div>
+        </div>
+
+        <h1 class="text3" style="margin-top: 1.5%;">Departments in which to pursue your passion</h1>
+        <h1 class="text5" style="margin-top: 0.5%;"><a href="#" target="_blank" style="text-decoration: none;">Computer Science</a>  |  
+            <a href="#" target="_blank" style="text-decoration: none;">Cyber Security</a>  |  
+            <a href="#" target="_blank" style="text-decoration: none;">Creative Technology</a>  |  
+            <a href="#" target="_blank" style="text-decoration: none;">Biomedical</a> | 
+            <a href="#" target="_blank" style="text-decoration: none;">Mechatronics</a>  |  
+            <a href="#" target="_blank" style="text-decoration: none;">AUSOM</a>  |  
+            <a href="#" target="_blank" style="text-decoration: none;">FMC</a>  |  
+            <a href="#" target="_blank" style="text-decoration: none;">Social Sciences</a>
+        </h1>
+        <a href="#" target="_blank" style="text-decoration: none;">
+            <div class="morebox" style="margin-top: 2%;">
+                <h1 class="head2"><br>MoreAboutAcademics</h1>
+            </div>
+            <br>
+        </a>
+    </div>
+    <div class="img1"></div>
+    <div class="c6">
+        
+    <div class="c9">
+        <h1 class="head1"><br>Campuses</h1>
+        <h1 class="text2">Building a vibrant community of creative and<br>accomplished people</h1>
+        <div class="c9-1" style="margin-top: 1%;">
+            <div class="c8box1" style="margin-left: 15%;">
+                <div class="c8box2">
+                    <img src="https://www.au.edu.pk/AU_New_Assets/images/Campuses/islamabad.jpg" style="width: 100%;">
+                </div>
+                <h1 class="text3">Kamra Campus</h1>
+                <h1 class="text5">The campus is being built in five phases with phase one being complete and functional since February 2020.</h1>
+            </div>
+            <div class="c8box1" style="margin-left: 3.5%;">
+                <div class="c8box2">
+                    <img src="https://www.au.edu.pk/AU_New_Assets/images/Campuses/kamra.jpg" style="width: 100%;">
+                </div>
+                <h1 class="text3">Multan Campus</h1>
+                <h1 class="text5">Air University Multan Campus was inaugurated in 2011 by then prime minister of Pakistan, Yousaf Raza Gillani.</h1>
+            </div>
+            <div class="c8box1" style="margin-left: 3.5%;">
+                <div class="c8box2">
+                    <img src="https://www.au.edu.pk/AU_New_Assets/images/Campuses/multan.jpg" style="width: 100%;">
+                </div>
+                <h1 class="text3">South Campus</h1>
+                <h1 class="text5">Another campus is in the construction phase in Sector H-11/2 of Islamabad.</h1>
+            </div>
+        </div>
+        <a href="#" target="_blank" style="text-decoration: none;">
+            <div class="morebox" style="margin-top: 2%;">
+                <h1 class="head2"><br>More Campuses</h1>
+            </div>
+            <br>
+        </a>
+    </div>
+
+    <div class="c10">
+        <h1 class="head1">Admissions</h1>
+        <h1 class="text2">Building a vibrant community of creative and<br>accomplished people</h1>
+        <div class="c10img1"></div>
+        <div class="c10-1">
+            <div class="c10box1" style="margin-left: 10%;">
+                <h1 class="text3" style="margin-top: 5%;">Why AU ?</h1> 
+                <h1 class="text5">The University is a degree awarding autonomous institution and its graduates are offered good placement opportunities in the job market. The University promotes research in all disciplines. Faculty members are encouraged to help develop the education system and curricula of the university using their experience and research. Faculty development and updating of courses are given high priority and are undertaken as a regular academic requirement.</h1>
+            </div>
+            <div class="c10box1" style="margin-left: 5%;">
+                <h1 class="text3" style="margin-top: 5%;">Scholarships</h1> 
+                <h1 class="text5">AU pays back to society through Graduate Research Initiative Program. This program enables the students to take on professional challenges for excellent leadership careers in academia and industry.</h1>
+            </div>
+        </div>
+        <a href="#" target="_blank" style="text-decoration: none;">
+            <div class="morebox" style="margin-top: 2%;">
+                <h1 class="head2"><br>Admissions Schedule</h1>
+            </div>
+        </a>
+        <div class="c10img2"></div>
+    </div>
+
+    <div class="research">
+        <h1 class="research" style="margin-top: 0.35%;">Research</h1>
+        <h4><b>6th</b> Times Impact Ranking</h4>
+        <h4><b>8th</b> Research Intensive University by HEC</h4>
+        <h4><b>15th</b> QS Ranking University among 232 Universities of Pakistan</h4>
+        <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/FOE3.jpg" alt="image" width="300" height="300">
+        <img src="https://www.au.edu.pk/Pages/NewsEvents/EventGallary/128_10.jpg" alt="image" width="300" height="300">
+        <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/FCAI3.jpg" alt="image" width="300" height="300">
+        <img src="https://www.au.edu.pk/AU_New_Assets/images/blog/ausom3.jpg" alt="image" width="300" height="300">
+    </div>
+    
+    <div class="c12">
+        <div class="c12list" style="margin-left: 10%;">
+            <h1 class="text3" style="text-align: left;">Schools</h1>
+            <ul class="list-text">
+                <li><a href="#" target="_blank" style="text-decoration: none;">AUSOM</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">FCAI</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">Engineering</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">Social Sciences</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">Health Sciences</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">Applied Sciences</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">Aoro &amp; SS</a></li>
+            </ul>
+        </div>
+        <div class="c12list" style="margin-left: 2.5%;">
+            <h1 class="text3" style="text-align: left;">Departments</h1>
+            <ul class="list-text">
+                <li><a href="#" target="_blank" style="text-decoration: none;">Mechatronics</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">Biomedical</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">Computer Scence</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">Cyber Security</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">Creative Technology</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">FMC</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">Psychology</a></li>
+            </ul>
+        </div>
+        <div class="c12list" style="margin-left: 2.5%;">
+            <h1 class="text3" style="text-align: left;">Portals</h1>
+            <ul class="list-text">
+                <li><a href="#" target="_blank" style="text-decoration: none;">Admission Portal</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">Student Portal</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">Job Portal</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">Fee Portal</a></li>
+            </ul>
+        </div>
+        <div class="c12list" style="margin-left: 2.5%;">
+            <h1 class="text3" style="text-align: left;">Affiliated Institutes</h1>
+            <ul class="list-text">
+                <li><a href="#" target="_blank" style="text-decoration: none;">Bilquis College of Education for Women</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">Fazaia College of Education for Women</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">Aero Medical Institute</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">College of Education</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">College of Education for Women</a></li>
+            </ul>
+        </div>
+        <div class="c12list" style="margin-left: 2.5%;">
+            <h1 class="text3" style="text-align: left;">Constituent Units</h1>
+            <ul class="list-text">
+                <li><a href="#" target="_blank" style="text-decoration: none;">Fazaia Medical College</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">Fazaia Ruth Pfau Medical College</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">College of Flying Training,</a></li>
+                <li><a href="#" target="_blank" style="text-decoration: none;">College of Aviation Safety Management</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="c13">
+        <div class="c13b0x1" style="margin-left: 5%;"></div>
+             <footer>
+                <h1>Air University</h1>
+                <p>Main Campus, PAF complex E-9 Islamabad.</p>
+                <p>Copyright &copy; All rights reserved.</p>
+             </footer>    
+        </div>
+    </div>
+</body></html>
